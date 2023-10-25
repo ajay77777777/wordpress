@@ -10,8 +10,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: project22
-      MYSQL_USER: srikanth
-      MYSQL_PASSWORD: srikanth123
+      MYSQL_USER: ajay
+      MYSQL_PASSWORD: ajay123
 
   wordpress:
     image: wordpress:latest
@@ -20,8 +20,8 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_PASSWORD: srikanth123
-      WORDPRESS_DB_USER: srikanth
+      WORDPRESS_DB_PASSWORD: ajay123
+      WORDPRESS_DB_USER: ajay
       WORDPRESS_DB_NAME: project22
     volumes:
       - wordpress_data:/var/www/html
